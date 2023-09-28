@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('math-formulas-mathematical-formulas-on-green-school-chalkboard-handwritten-scientific-math-equations-theories-or-calculations-background-vector.jpg');
+            columns: black;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .div{
+            width: 50%;
+            height: 500px;
+            background-color:#cfdddc;
+            color: black;
+            padding-top: 10%;
+            padding-left: 30px;
+            margin-top: 10%;
+            margin-left: 20%;
+            border-radius: 20%;
+            border-top:5px solid red ;
+            border-bottom:5px solid green;
+            opacity: 90%;
+           }
+        
+        #result{
+            
+            color: red;
+            align-items: center;
+           
+            width: 100%;
+        }
+        .bl{
+            width: 100%;
+            height: 73px;
+            background-color: black;
+            color:red;
+            margin-top: 5.5%;
+            opacity: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div">
+        <h1> wellcome to kp calculator</h1>
+        <input type="number" id="bit">
+        <input type="number" id="bit2">
+        <button type="button" onclick="plus()">+</button>
+        <button type="button" onclick="minus()">-</button>
+        <button type="button" onclick="multiply()">*</button>
+        <button type="button" onclick="divide()">/</button>
+        <button type="button" onclick="modlus()">%</button>
+        <h1>your answer is 😎😋🤩 :-<p id="result"></p></h1>
+    </div>
+    <marquee><div class="bl">
+        <p>Note :- here You can your answer and to reset this refresh the web page....!!!......!!.....😍🤔🤔🤔🤔🤔🤔🤔🤔</p>
+    </div></marquee>
+</body>
+<script>
+    /*;
+    var y=document.getElementById('bit2').value;*/
+    function plus() {
+        var x=Number(document.getElementById("bit").value);
+        var y=Number(document.getElementById("bit2").value);
+        var z=x+y;
+        document.getElementById('result').innerHTML=z;
+        
+    }
+    function minus() {
+        var x=Number(document.getElementById("bit").value);
+        var y=Number(document.getElementById("bit2").value);
+        var z=x-y;
+        document.getElementById('result').innerHTML=z;
+        
+    }
+    function multiply() {
+        var x=Number(document.getElementById("bit").value);
+        var y=Number(document.getElementById("bit2").value);
+        var z=x*y;
+        document.getElementById('result').innerHTML=z;
+        
+    }
+    function divide() {
+        var x=Number(document.getElementById("bit").value);
+        var y=Number(document.getElementById("bit2").value);
+        var z=x/y;
+        document.getElementById('result').innerHTML=z;
+        
+    }
+    function modlus() {
+        var x=Number(document.getElementById("bit").value);
+        var y=Number(document.getElementById("bit2").value);
+        var z=x%y;
+        document.getElementById('result').innerHTML=z;
+        
+    }
+ 
+</script>
+</html>
