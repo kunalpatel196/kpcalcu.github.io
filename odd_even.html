@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial,sans-serif;
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+       
+    </style>
+</head>
+<body>
+    <H1>Even or Odd Number Checker</H1>
+    <input type="text" placeholder="enter your number" id="value">
+    <button onclick="enter()">click</button>
+    
+</body>
+<script>
+    function enter(){
+        var x=Number(document.getElementById("value").value);
+        if(x%2==0){
+            window.alert("EVEN 😎😂") 
+        }
+        else{
+            window.alert("ODD")
+        }
+}
+</script>
+</html>
