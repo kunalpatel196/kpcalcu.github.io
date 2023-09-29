@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        input[type="date"] {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>DATE DIFFERENCE CALCULATOR</h1>
+    <input type="date" id="old">
+    <input type="date" id="new">
+    <button type="button" onclick="submit()">submit</button>
+   <P>Month :-  <p id="result"></p></P>
+   <p>Year :-   <p id="res"></p></p>
+   <p>Date :-  <p id="resul"></p></p>
+
+</body>
+<script>
+function submit(){
+    
+    var x=document.getElementById("old").value;
+    var y=document.getElementById("new").value;
+    if ( x <= y){
+
+        console.log(x);
+        console.log(y);
+        const d1=new Date(x);
+        const d2=new Date(y);
+        const r=d2.getDate()-d1.getDate();
+        const q=d2.getFullYear()-d1.getFullYear();
+        const w=d2.getMonth()-d1.getMonth();
+        console.log(d1.getDate());
+        console.log(d2.getDate());
+        console.log(d1.getFullYear());
+        console.log(d2.getFullYear());
+        console.log(d1.getMonth());
+        console.log(d2.getMonth());
+        
+        document.getElementById('result').innerHTML=r;
+        document.getElementById('res').innerHTML=q;
+        document.getElementById('resul').innerHTML=w;
+    }
+    else{
+      document.write("WARNING :- your old value is grater than new value 😫😯😴😴😴😴😴😴😴😴😴😴😴😴😕😕😤😤😤😤😤");
+    }
+}
+
+</script>
+</html>
